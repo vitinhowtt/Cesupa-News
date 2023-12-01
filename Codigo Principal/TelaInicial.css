@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px;
+}
+
+.Titulo {
+    color: blue;
+    margin: 0;
+}
+
+nav {
+    background-color: black;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+img {
+    width: 49%;
+}
+
+.conteudo {
+    text-align: center; /* Centraliza o conteúdo */
+    max-width: 100%;   /* Define a largura máxima do carrossel */
+    margin: 0 auto;     /* Centraliza o carrossel horizontalmente */
+}
+
+img {
+    max-width: 100%;    /* Faz com que a imagem ajuste-se à largura máxima do contêiner */
+    height: auto;       /* Mantém a proporção da imagem */
+}
+
+button {
+    margin: 10px; /* Adicionei um espaçamento entre os botões */
+    padding: 5px 10px; /* Adicionei um espaçamento interno aos botões */
+    background-color: black; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Removi as bordas */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333; /* Cor de fundo ao passar o mouse */
+}
+
+.welcome-message {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.welcome-message p {
+    color: #333;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+#fonte {
+    font-size: 30px;
+}
