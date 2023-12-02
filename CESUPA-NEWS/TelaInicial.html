@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="TelaInicial.css">
+  <title>Cesupa News</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <h1 class="Titulo">Cesupa News</h1>
+      <nav>
+        <a href="Futebol.html">Futebol</a>
+        <a href="Tecnologia.html">Tecnologia</a>
+        <a href="Cultura.html">Cultura</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="welcome-message">
+      <p id="fonte">Bem-vindo ao Cesupa News, sua fonte confiável de informações!</p>
+      <p>Descubra as últimas notícias sobre futebol, tecnologia e cultura.</p>
+    </div>
+
+    <div class="carrosel">
+
+    </div>
+
+    <section class="section">
+      <h2>Buscar Notícias</h2>
+      <label for="termoBusca">Digite um termo:</label>
+      <input type="text" id="termoBusca" oninput="buscarNoticias()">
+    </section>
+
+    <!-- Seção Futebol -->
+    <section id="futebol" class="section">
+      <h2>Futebol</h2>
+      <div class="conteudo">
+        <p>Fábio Santos recebe homenagem do Corinthians em despedida: 'Valeu a pena'</p>
+        <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/07/AGF20220724403.jpg?w=1220&h=674&crop=1" alt="Fabio Santos">
+        <p>Fábio Santos foi homenageado hoje, na sua despedida dentro da casa do Corinthians. O lateral-esquerdo de 38 anos enfrenta o Internacional, na Neo Química Arena, antes da aposentadoria ao término da temporada…</p>
+      </div>
+    </section>
+
+    <!-- Seção Tecnologia -->
+    <section id="tecnologia" class="section">
+      <h2>Tecnologia</h2>
+      <div class="conteudo">
+        <p>Como Inteligência Artificial pode substituir negociação de contratos</p>
+        <img src="https://ichef.bbci.co.uk/news/800/cpsprodpb/621f/live/319f46e0-8dd0-11ee-833d-0f8d294ddc97.jpg" alt="">
+        <h6>(Empresas de tecnologia afirmam que IA poderá se encarregar das tarefas mais maçantes do trabalho dos advogados, como análise de contratos)</h6>
+        <p>Sean McManus Role, Repórter de Tecnologia, BBC News 28 novembro 2023</p>
+        <p> "Os advogados estão cansados. Eles ficam entediados boa parte do tempo. Ter algo que faça o trabalho maçante e deixe você livre para se concentrar em antecipar suas estratégias: esta é a solução."
+
+          Quem afirma é a diretora-gerente e chefe de recursos humanos da empresa britânica Luminance, Jaeger Glucina.
+
+          A empresa foi fundada em 2015 e é especializada em Inteligência Artificial (c) para profissionais do setor jurídico.
+
+          Antes de entrar na Luminance, em 2017, Glucina se formou como advogada e procuradora na Nova Zelândia.
+
+          "Os profissionais do setor jurídico claramente são pessoas muito bem treinadas", segundo ela.</p>
+      </div>
+    </section>
+
+    <!-- Seção Cultura -->
+    <section id="cultura" class="section">
+      <h2>Cultura</h2>
+      <div class="conteudo">
+        <p>Material de preservação de línguas indígenas será distribuído para as aldeias</p>
+        <img src="https://i0.wp.com/jornal.usp.br/wp-content/uploads/2023/11/20231113_guarani_kaiowa.jpg?w=1200&ssl=1" alt="">
+        <h6>(Recepção tradicional do povo Guarani Kaiowá para visitantes em suas aldeias - Foto: Percurso da Cultura/Flickr/CC BY-SA)</h6>
+        <p>O cacique Akiaboro Kayapó diz que os índios fizeram a pesquisa e os jovenms vão aprender as tradições culturais nas aldeiasFernando Frazão/Agência Brasil
+
+          Lideranças indígenas receberam hoje (21) os kits do Programa de Documentação de Línguas e Culturas Indígenas, uma parceria entre a Fundação Nacional do Índio (Funai), o Museu do Índio e a Unesco no Brasil, com o objetivo de formar pesquisadores indígenas e não indígenas, além de criar arquivos digitais e centros de documentação nas aldeias e no museu.
+
+          O material será distribuído para as comunidades e escolas indígenas, como fonte de pesquisa e aprendizagem.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Postar Notícia</h2>
+      <form id="formNoticia">
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" required>
+        <label for="categoria">Categoria:</label>
+        <select id="categoria" required>
+          <option value="futebol">Futebol</option>
+          <option value="tecnologia">Tecnologia</option>
+          <option value="cultura">Cultura</option>
+        </select>
+        <label for="conteudoNoticia">Conteúdo:</label>
+        <textarea id="conteudoNoticia" rows="4" required></textarea>
+        <button type="button" onclick="postarNoticia()">Postar Notícia</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <center>
+      <h1>Faça seu comentário aqui</h1>
+      <br><br>
+      <input type="text" id="mensagem" placeholder="Digite seu comentario">
+      <br><br>
+      <button onclick="comente()">Clique aqui</button>
+      <br>
+      <div id="Resposta"></div>
+      <br>
+      <a href="avaliation.html">
+        <button>Voltar</button>
+      </a>
+    </center>
+  </footer>
+
+  <script src="TelaInicial.js"></script>
+
+</body>
+
+</html>
