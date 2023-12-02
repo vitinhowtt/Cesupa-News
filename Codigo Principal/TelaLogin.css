@@ -99,7 +99,7 @@ button:hover {
   text-align: justify;
   display: inline-block;
   vertical-align: top;
-  width: 60%; /* Ajuste conforme necessário */
+  width: 60%; 
 }
 
 .conteudo img {
@@ -107,5 +107,5 @@ button:hover {
   height: auto;
   display: inline-block;
   vertical-align: top;
-  width: 40%; /* Ajuste conforme necessário */
+  width: 40%; 
 }
